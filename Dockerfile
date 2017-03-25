@@ -18,6 +18,6 @@ RUN wget "http://download.videolan.org/debian/stable/libdvdcss2_libdvdcss2_versi
     
 COPY presets /home/app/Desktop/HandbrakePresets
 
-RUN chown app.app -R /home/app/ && \
+RUN chown app.app -R /home/app/
 
 VOLUME ["/rips"]
