@@ -11,7 +11,7 @@ RUN apt-get -q -y update && \
 
 RUN wget "http://download.videolan.org/debian/stable/libdvdcss2_libdvdcss2_version 1.2.13-0_amd64.deb"; \
     dpkg -i libdvdcss2_*.deb; \
-    echo "handbrake \$*" >> /bin/ssh-app.sh; \
+    echo "handbrake \$*" >> /usr/local/bin/ssh-app.sh; \
     mkdir -p /rips /home/app/Desktop/; \
     chown app.app -R /home/app/ /rips; \
     usermod -aG cdrom app
