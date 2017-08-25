@@ -9,7 +9,7 @@ RUN apt-get -q -y update \
  && apt-get -q -y clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
  \
- && wget "http://download.videolan.org/debian/stable/libdvdcss2_libdvdcss2_version 1.2.13-0_amd64.deb" \
+ && wget "http://download.videolan.org/debian/stable/libdvdcss2_1.2.13-0_amd64.deb" \
  && dpkg -i libdvdcss2_*.deb \
  && echo "handbrake \$*" >> /usr/local/bin/ssh-app.sh \
  && mkdir -p /rips /home/app/Desktop/ \
